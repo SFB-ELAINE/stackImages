@@ -123,7 +123,7 @@ stackImages <- function(input_dir = NULL,
   # ---------------------- Data output------------------------------------ #
   # ---------------------------------------------------------------------- #
 
-  dir.create("stack", showWarnings = FALSE)
+  dir.create(paste(input_dir, "/stack/", sep=""), showWarnings = FALSE)
   # Save the results
   tiff::writeTIFF(what = image,
                   where = paste(input_dir, "/stack/stackMethod_", stackMethod,
