@@ -123,14 +123,15 @@ stackImages <- function(input_dir = NULL,
   # ---------------------- Data output------------------------------------ #
   # ---------------------------------------------------------------------- #
 
+  dir.create("stack", showWarnings = FALSE)
   # Save the results
   tiff::writeTIFF(what = image,
-                  where = paste(input_dir, "/stackMethod_", stackMethod,
+                  where = paste(input_dir, "/stack/stackMethod_", stackMethod,
                                 ".tif", sep = ""),
                   bits.per.sample = 8L, compression = "none",
                   reduce = TRUE)
 
 
 
-  return(0)
+  return(image)
 }
