@@ -1,0 +1,14 @@
+Package: stackImages
+Type: Package
+Title: Stacks images of confocal microscopy by different methods
+Version: 0.1.0
+Author: c(person("Kai", "Budde", email = "kai.budde@uni-rostock.de",
+    role = c("aut", "cre"))
+Maintainer: Kai Budde <kai.budde@uni-rostock.de>
+Description: This package uses two images of confocal microscopy and creates an overlay dependig on a specified method.
+License: LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Imports: tiff
