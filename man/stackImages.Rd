@@ -19,7 +19,7 @@ stackImages(input_dir = NULL, input_files = NULL,
 Function to stack given images
 }
 \details{
-The input files should be tif-format.
+The input files should be in tif-format.
 The output will be a tif-file as well.
 }
 \author{
