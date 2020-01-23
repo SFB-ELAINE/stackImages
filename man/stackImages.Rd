@@ -5,8 +5,7 @@
 \alias{stackimages}
 \title{stackImages}
 \usage{
-stackImages(input_dir = NULL, input_files = NULL,
-  stackMethod = "average")
+stackImages(input_dir = NULL, input_files = NULL, stackMethod = "average")
 }
 \arguments{
 \item{input_dir}{A string}

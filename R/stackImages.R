@@ -114,9 +114,9 @@ stackImages <- function(input_dir = NULL,
 
   # Normalize
   if(stackMethod == "addAndNormalize"){
-    maxValue <- max(image)
-    image <- image / maxValue
-
+    for(i in 1:3){
+      image[,,i] <- image[,,i]/max(image[,,i])
+    }
   }
 
   # ---------------------------------------------------------------------- #
